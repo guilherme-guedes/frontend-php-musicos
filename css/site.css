@@ -112,6 +112,11 @@ form input {
   padding: 70px;
 }
 
+.section {
+  border: 1px solid #EEE;
+  padding: 30px;
+}
+
 .home-icon {
   font-size: 30px;
   float: left;
