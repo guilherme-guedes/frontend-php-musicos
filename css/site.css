@@ -1,4 +1,14 @@
 /** HTML ELEMENTS */
+h1 {
+  font-size: 150%;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 130%;
+  text-shadow: 2px 2px #c8c9d2cf;
+}
+
 nav {
   background: #000;
   position: fixed;
@@ -74,7 +84,7 @@ form input,
 form select {
   border-radius: 0.25rem;
   border: 1px solid #e9ecef;
-  padding: 3px;
+  padding: 5px;
   border-radius: 3px;
 }
 
@@ -82,11 +92,25 @@ form label {
   font-size: 95%;
 }
 
-table, th, td {
+table {
+  padding: 5px !important;
   border-spacing: 5px;
   border: 1px solid black;
   border-collapse: collapse;
-  background-color: #f1f1c1;
+}
+
+th,
+td {
+  border-spacing: 5px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 3px;
+}
+
+th {
+  font-weight: bold;
+  color: #fff;
+  background-color: #000;
 }
 
 footer {
