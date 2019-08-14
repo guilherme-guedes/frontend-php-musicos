@@ -6,7 +6,8 @@ h1 {
 h2 {
   text-transform: uppercase;
   font-size: 130%;
-  text-shadow: 2px 2px #c8c9d2cf;
+  text-shadow: 1px 1px #c8c9d2cf;
+  padding-bottom: 10px;
 }
 
 nav {
