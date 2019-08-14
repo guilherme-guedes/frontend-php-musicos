@@ -1,35 +1,41 @@
 <div class="container">
     <form>
         <div class="section">
-            <div>
-                <label>Nome</label>
-                <input type="text" id="inNome" />
+            <div style="display: block; margin: 0 40px 6px; display: flex;">
+                <label style="float: left; width: -webkit-fill-available">Nome:</label>
+                <input style="float: right; width: -webkit-fill-available" type="text" id="inNome" />
             </div>
-
-            <div>
-                <label>Nascimento</label>
-                <input type="date" id="inData" />
+            <div style="display: block; margin: 0 40px 6px; display: flex;">
+                <label style="float: left; width: -webkit-fill-available;">Nascimento:</label>
+                <input style="float: right; width: -webkit-fill-available;" type="date" id="inData" />
             </div>
-            <div>
-                <label>Gênero</label>
-                <input type="radio" id="rdGeneroIndef" name="genero" value="Indefinido">Indefinido</input>
-                <input type="radio" id="rdGeneroMasc" name="genero" value="Masculino">Masculino</input>
-                <input type="radio" id="rdGeneroFem" name="genero" value="Feminino">Feminino</input>
+            <div style="display: block; margin: 0 40px 6px; display: flex;">
+                <label style="float: left; width: -webkit-fill-available;">Gênero:</label>
+                <div style="float: right; width: -webkit-fill-available;">
+                    <input type="radio" id="rdGeneroIndef" name="genero" value="Indefinido"><label
+                        class="font-radio">Indefinido</label></input>
+                    <input type="radio" id="rdGeneroMasc" name="genero" value="Masculino"><label
+                        class="font-radio">Masculino</label></input>
+                    <input type="radio" id="rdGeneroFem" name="genero" value="Feminino"><label
+                        class="font-radio">Feminino</label></input>
+                </div>
             </div>
         </div>
         <div class="section">
-            <label>Estilo Musical</label>
-            <select id="selectEstilos">
-                <option>Rock</option>
-                <option>Pop Rock</option>
-                <option>Indie Rock</option>
-                <option>Rock Progressivo</option>
-                <option>Fusion</option>
-                <option>Jazz</option>
-                <option>Samba</option>
-                <option>Hip Hop</option>
-                <option>Forró</option>
-            </select>
+            <div style="display: block; margin: 0 40px 6px; display: flex;">
+                <label style="float: left; width: -webkit-fill-available;">Estilo Musical</label>
+                <select style="float: right; width: -webkit-fill-available;" id="selectEstilos">
+                    <option>Rock</option>
+                    <option>Pop Rock</option>
+                    <option>Indie Rock</option>
+                    <option>Rock Progressivo</option>
+                    <option>Fusion</option>
+                    <option>Jazz</option>
+                    <option>Samba</option>
+                    <option>Hip Hop</option>
+                    <option>Forró</option>
+                </select>
+            </div>
         </div>
         <div class="section">
             <button type="submit" id="btnSalvar">Salvar</button>

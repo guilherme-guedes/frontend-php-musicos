@@ -62,17 +62,31 @@ body div img {
   height: auto;
 }
 
-form input {
-  border-radius: 0.25rem;
-  border: 1px solid #e9ecef;
-}
-
 form button {
   border-radius: 0.25rem;
   font-size: 110%;
   font-family: "Bitter", serif;
   color: #fff;
   background-color: #000;
+}
+
+form input,
+form select {
+  border-radius: 0.25rem;
+  border: 1px solid #e9ecef;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+form label {
+  font-size: 95%;
+}
+
+table, th, td {
+  border-spacing: 5px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: #f1f1c1;
 }
 
 footer {
@@ -88,9 +102,6 @@ footer {
 footer p {
   padding: 5px;
   float: right;
-}
-form input {
-  padding: 3px;
 }
 
 /** CLASS */
@@ -113,7 +124,7 @@ form input {
 }
 
 .section {
-  border: 1px solid #EEE;
+  border: 1px solid #eee;
   padding: 30px;
 }
 
@@ -133,4 +144,8 @@ form input {
 
 .toggleOn-icon :hover {
   color: darkgreen;
+}
+
+.font-radio {
+  font-size: 80%;
 }
