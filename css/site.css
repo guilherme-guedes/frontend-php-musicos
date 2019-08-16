@@ -96,9 +96,11 @@ form label {
 
 table {
   padding: 5px !important;
-  border-spacing: 5px;
+  /* border-spacing: 5px;
   border: 1px solid black;
-  border-collapse: collapse;
+  border-collapse: collapse; */
+  background-color: #fff;
+  width: 100%;
 }
 
 th,
@@ -106,7 +108,8 @@ td {
   border-spacing: 5px;
   /* border: 1px solid black; */
   border-collapse: collapse;
-  padding: 5px;
+  padding: 10px;
+  font-family: "Bitter", serif;
 }
 
 th {
@@ -115,7 +118,12 @@ th {
   background-color: #000;
 }
 
+td{
+  color: #4b4e4b;
+}
+
 td button {
+  color: #4b4e4b;
   border: none;
   background-color: transparent;
   text-transform: lowercase;
@@ -154,7 +162,7 @@ footer p {
   margin-left: 200px;
   margin-right: 200px;
   font-family: "Bitter", serif;
-  background-color: #f8f9fa;
+  background-color: #fff;
   text-align: center;
   border: 1px solid #e9ecef;
   border-radius: 0.25rem;
@@ -186,4 +194,8 @@ footer p {
 
 .font-radio {
   font-size: 80%;
+}
+
+.column-name{
+  text-align: left;
 }
