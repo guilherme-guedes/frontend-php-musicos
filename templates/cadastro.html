@@ -4,17 +4,25 @@
         <div class="section">
             <div style="display: block; margin: 0 40px 6px; display: flex;">
                 <label style="float: left; width: -webkit-fill-available">Nome:
-                    <input style="float: right; width: -webkit-fill-available" type="text" id="inNome" />
+                    <input style="float: right; width: -webkit-fill-available" autofocus required placeholder="seu nome"
+                        type="text" id="inNome" />
+                </label>
+            </div>
+            <div style="display: block; margin: 0 40px 6px; display: flex;">
+                <label style="float: left; width: -webkit-fill-available">Email:
+                    <input style="float: right; width: -webkit-fill-available" required placeholder="seu e-mail"
+                        type="text" id="inEmail" />
                 </label>
             </div>
             <div style="display: block; margin: 0 40px 6px; display: flex;">
                 <label style="float: left; width: -webkit-fill-available;">Nascimento:
-                    <input style="float: right; width: -webkit-fill-available;" type="date" id="inData" />
+                    <input style="float: right; width: -webkit-fill-available;" required
+                        placeholder="quando você nasceu" type="date" id="inData" />
                 </label>
             </div>
             <div style="display: block; margin: 0 40px 6px; display: flex;">
                 <label style="float: left; width: -webkit-fill-available;">Endereço:
-                    <select style="float: right; width: -webkit-fill-available;" id="selectEstados">
+                    <select style="float: right; width: -webkit-fill-available;" required id="selectEstados">
                         <option>AL</option>
                         <option>BR</option>
                         <option>BH</option>
@@ -24,7 +32,7 @@
                         <option>RJ</option>
                         <option>SP</option>
                     </select>
-                    <select style="float: right; width: -webkit-fill-available;" id="selectCidades">
+                    <select style="float: right; width: -webkit-fill-available;" required id="selectCidades">
                         <option>Petrópolis</option>
                         <option>Teresópolis</option>
                     </select>
@@ -33,12 +41,9 @@
             <div style="display: block; margin: 0 40px 6px; display: flex;">
                 <label style="float: left; width: -webkit-fill-available;">Gênero:
                     <div style="float: right; width: -webkit-fill-available;">
-                        <input type="radio" id="rdGeneroIndef" name="genero" value="Indefinido"><label
-                            class="font-radio">Indefinido</label></input>
-                        <input type="radio" id="rdGeneroMasc" name="genero" value="Masculino"><label
-                            class="font-radio">Masculino</label></input>
-                        <input type="radio" id="rdGeneroFem" name="genero" value="Feminino"><label
-                            class="font-radio">Feminino</label></input>
+                        <label><input type="radio" id="rdGeneroIndef" name="genero" value="Indefinido">Indefinido</input></label>
+                        <label><input type="radio" id="rdGeneroMasc" name="genero" value="Masculino">Masculino</input></label>
+                        <label><input type="radio" id="rdGeneroFem" name="genero" value="Feminino">Feminino</input></label>
                     </div>
                 </label>
             </div>
@@ -61,7 +66,8 @@
                 <button id="btnAdd">ADD</button>
             </div>
             <div style="text-align: -webkit-right;margin: 0 40px 6px;">
-                <textarea style="display: block;width: -webkit-fill-available"></textarea>
+                <textarea style="display: block;width: -webkit-fill-available" placeholder="seus estilos musicais"
+                    required></textarea>
             </div>
         </div>
         <div class="section">

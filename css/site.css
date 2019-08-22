@@ -40,6 +40,7 @@ nav {
   text-align: center;
   top: 0;
   z-index: 15;
+  box-shadow: 0 0 1em #f3eaea;
 }
 
 nav ul {
@@ -51,7 +52,6 @@ nav li {
   display: inline-block;
   padding: 5px;
   color: #eee;
-  /* text-shadow: 1px 1px #c8c9d2cf; */
   height: auto;
 }
 
@@ -76,16 +76,16 @@ nav li img {
 
 main {
   width: 100%;
+  height: 100%;
   display: block;
   clear: both;
-  margin-top: 50px;
+  margin-top: 59px;
   background-image: url("../img/img1.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   position: relative;
-  height: 700px;
   z-index: 12;
 }
 
@@ -116,9 +116,6 @@ form label {
 
 table {
   padding: 5px !important;
-  /* border-spacing: 5px;
-  border: 1px solid black;
-  border-collapse: collapse; */
   background-color: #fff;
   width: 100%;
 }
@@ -126,7 +123,6 @@ table {
 th,
 td {
   border-spacing: 5px;
-  /* border: 1px solid black; */
   border-collapse: collapse;
   padding: 10px;
   font-family: "Bitter", serif;
@@ -154,9 +150,12 @@ td button {
 }
 
 td button:hover {
-  /* text-decoration: underline; */
   color: #23f;
   cursor: pointer;
+}
+
+textarea {
+  resize: none;
 }
 
 footer {
@@ -181,10 +180,10 @@ footer p {
 }
 
 .container {
+  animation: show 0.5s ease-in;
+  -webkit-animation: show 0.5s ease-in;
   width: auto;
-  margin-top: 100px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin: 100px 200px 100px 200px;
   font-family: "Bitter", serif;
   background-color: #fff;
   text-align: center;
@@ -210,10 +209,18 @@ footer p {
 .toggleOn-icon {
   font-size: 30px;
   float: right;
+  color: #fff;
+}
+
+.toggleOn-icon i {
+  color: #fff;
+  transition: color 1.5s;
 }
 
 .toggleOn-icon :hover {
-  color: darkgreen;
+  color: #0da40c;
+  transition: color 1.5s;
+  cursor: pointer;
 }
 
 .font-radio {
@@ -222,4 +229,41 @@ footer p {
 
 .column-name {
   text-align: left;
+}
+
+/** Animations */
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes quica{
+  from {
+    top: 0;
+  }
+  to {
+    top: 1em;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes quica{
+  from {
+    top: 0;
+  }
+  to {
+    top: 1em;
+  }
 }
