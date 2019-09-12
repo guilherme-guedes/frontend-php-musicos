@@ -36,3 +36,5 @@
     </div>
 </body>
 </html>
+
+<script type="text/javascript" src="js/scripts.js"></script>

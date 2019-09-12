@@ -31,16 +31,17 @@ blockquote p {
 }
 
 nav {
-  background: #000;
+  background: transparent;
   position: fixed;
   width: 100%;
-  height: auto;
-  border-width: 1px 0;
+  height: auto;  
   margin: 0;
   text-align: center;
   top: 0;
-  z-index: 15;
-  box-shadow: 0 0 1em #f3eaea;
+  z-index: 15;  
+  /* background: #000;
+  border-width: 1px 0;   
+  box-shadow: 0 0 1em #f3eaea;*/
 }
 
 nav ul {
@@ -78,8 +79,7 @@ main {
   width: 100%;
   height: 100%;
   display: block;
-  clear: both;
-  margin-top: 59px;
+  clear: both;  /* margin-top: 59px; */
   background-image: url("../img/img1.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -177,6 +177,12 @@ footer p {
 .page {
   display: flex;
   flex-direction: column;
+}
+
+.nav-background-fill {
+  background: #000;
+  border-width: 1px 0;   
+  box-shadow: 0 0 1em #f3eaea;
 }
 
 .container {
